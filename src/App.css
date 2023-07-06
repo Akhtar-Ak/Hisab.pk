@@ -1,0 +1,382 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 1500px;
+  margin: 0 auto;
+}
+
+.Navebar{
+  z-index: 1;
+  position: sticky;
+  top: 0;
+ 
+ background: rgba(0, 0, 0, 0.5);
+
+}
+
+.navebar{
+  padding: 2rem 0;
+  justify-content: space-between;
+  display: flex;
+}
+.nav_left{
+  color: white;
+}
+
+.nav_left h1{
+  font-size:  2.4rem;
+}
+
+.nav_menu{
+  display: flex;
+}
+
+.nav_menu li{
+  margin: 10px 20px;
+  list-style-type: none;
+  font-size: 1.2em;
+  color: white;
+  cursor: pointer;
+}
+
+.Home{
+  width: 100%;
+  height: 100vh;
+  color: white;
+  background-image: url("https://adminjs.co/img/hero-bg.webp");
+  border-radius: 0 0  0 30vw ;
+}
+
+.home_screen{
+  display: flex;
+ 
+}
+
+.home_left{
+  top: 40%;
+  transform: translateY(40%);
+}
+
+.home_title h1{
+  font-size: 3rem;
+}
+
+.animtion{
+  width: 40px;
+  height: 3px;
+  margin: 20px 0;
+  animation: run 1s  infinite reverse;
+  background-color: black;
+}
+
+@keyframes run {
+  0%  {background-color:black;}
+  100% {background-color: white;}
+}
+
+
+
+.home_right{
+  top: 35%;
+  transform: translateY(35%);}
+
+.btn{
+  margin: 50px 0;
+  width: 13rem;
+  height: 4rem;
+  font-size: 1.3rem;
+  color: white;
+  background-color: #db2a42;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.home_2nd_sec{
+  margin-top: 10rem;
+}
+
+.home_2nd_sec_header h1{
+  font-size: 3.5rem;
+  padding-left: 6rem;
+  margin-bottom: 20px;
+}
+
+.home_2nd_sec_discr p{
+  font-size: 1.3rem ;
+  padding: 0 5rem;
+  line-height: 1.8rem;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.home_3rd_sec{
+  display: flex;
+  margin: 70px auto;
+}
+
+.cart{
+  width: 450px;
+  border: 1px solid lightgray;
+  margin: 30px;
+  
+}
+
+.cart_body{
+  margin: 50px auto;
+  width: 350px;
+ 
+}
+
+.cart_body:hover{
+  border: .5px solid lightgray;
+  box-shadow: 2px 8px 8px 2px #888888;
+  transform: scale(1.05);
+}
+
+.cart_logo img{
+  margin: 50px 20px;
+  width: 180px;
+}
+
+.cart_heading h1{
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
+
+.cart_discr p{
+  margin: 0 20px;
+  padding-bottom: 20px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.home_4rth_sec{
+  align-items: center;
+}
+
+
+.slider{
+  display: flex;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  padding: 10px;
+  align-items: center;
+  scroll-behavior: smooth;
+  scroll-padding: 12px;
+  opacity: .6 ;
+}
+
+.slider::-webkit-scrollbar{
+  display: none;
+}
+
+.slider:hover{
+  opacity: 1; 
+}
+
+
+
+.slider_header h1{
+  margin: 2px 40rem;
+  font-size: 2.5rem;
+}
+.home_7th_sec{
+  width: 100%;
+  background-image: url("https://datastori.es/wp-content/cache/podlove/31/489088bfa41581dcf81c5aa11c975a/happy-birthday-data-stories_500x.png");
+}
+
+.slider .item{
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  scrollbar-arrow-color: #4c41e4;
+}
+
+.home_5th_sec{
+  display: flex;
+}
+
+.home_5th{
+  margin: 5rem 0;
+  display: flex;
+}
+.left_side{
+  width: 780px;
+}
+.left_side_details h1{
+  font-size: 3.5rem;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.left_side_details p{
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  line-height: 40px;
+
+}
+
+.left_side_details button{
+  width: 200px;
+  height: 4rem;
+  margin: 7em 0;
+  background-color: #db2a42;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.3em;
+  color: white;
+}
+
+.left_side_details button:hover{
+  background-color: #4c41e4;
+}
+
+.right_side{
+  margin-left: 20px;
+  width: 700px;
+
+}
+
+.right_side_details{
+  overflow: hidden;
+}
+
+.right_side_details h1{
+  margin-bottom: 20px;
+  font-size: 3.5rem;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.flip_card{
+ display: flex;
+ flex-wrap: wrap;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+
+.cardbody{
+  width: 490px;
+  margin: 5px;
+  background-color: #fafdff;
+  box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+}
+
+.cardbody_logo img{
+ margin: 20px auto; 
+}
+
+.cardbody_pera p{
+  margin: 10px;
+  font-size: 1.2rem;
+}
+
+.home_7th_sec{
+  margin: 100px 0;
+}
+
+.home_7th_view{
+  display: flex;
+}
+.home_7th_sec_left{
+  width: 720px;
+}
+.home_7th_sec_left h1 {
+  font-size: 3.5rem;
+  color: white;
+  margin-top: 80px;
+}
+
+.home_7th_sec_left p {
+  font-size: 1.2rem;
+  line-height: 35px;
+  color: white;
+}
+
+.home_7th_sec_left button {
+  width: 150px;
+  height: 4rem;
+  margin: 7em 0;
+  background-color: #db2a42;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.3em;
+  color: white;
+  cursor: pointer;
+}
+
+.home_7th_sec_right img{
+  width: 750px;
+  margin: 0 10px;
+}
+
+.cardbody:hover{
+  transform: rotate(180deg);
+  
+}
+
+.card_back{
+  width: 100%;
+  height: 100%;
+  padding-top: 80px;
+  transform: rotate(180deg);
+  background-color: rgb(105, 105, 204);
+}
+
+ /* .cardbody_logo img{
+  width: 100px;
+  margin: 5px;
+}
+
+.cardbody_title h1{
+  margin: 10px 9rem;
+  font-size: 1.3rem; 
+}
+
+.cardbody_pera p{
+  padding: 10px;
+  font-size: 1.2rem;
+  line-height: 30px;
+}  
+
+
+.flip-card {
+  background-color: transparent;
+ 
+  
+}
+
+.flip-card-inner {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  transition: transform 0.6s;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+
+.flip-card-front{
+  width: 490px;
+  margin: 5px;
+  background-color: #fafdff;
+  box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+}
+
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}   */
+
+
